@@ -29,6 +29,10 @@ a {
   text-decoration: none;
   color:black;
   font-weight:bold;
+  text-transform:capitalize;
+}
+button {
+  text-transform:capitalize;
 }
 ul {
   list-style: none;
@@ -236,6 +240,7 @@ header .icon-profile img {
   position:relative;
   margin: 20px 20px 40px;
 }
+
 .big-title::before,
 .big-title::after {
   content: "";
