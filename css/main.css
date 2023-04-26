@@ -190,6 +190,7 @@ aside ul li a img {
   }
   .show-phone {
     display:flex;
+    margin-top:15px;
   }
 }
 /* 1 sidebar */
