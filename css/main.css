@@ -80,6 +80,11 @@ ul {
   position:relative;
   display:flex;
 }
+@media (max-width: 767px) {
+  .logo {
+   display:none;
+  }
+}
 .logo .circle1 {
   position:relative;
   width:50px;
@@ -162,25 +167,29 @@ aside ul li a img {
   width:23px;
 }
 
+.show-phone {
+  display:none;
+} 
 @media (max-width: 767px) {
   sidebar {
-    width: 90px;
+    width: 70px;
     padding: 10px;
   }
   aside > h3 {
-    font-size: 13px;
-    margin-bottom: 15px;
+    display:none;
   }
   aside h3 span{
     display:none;
   }
-
   aside ul li a img {
-    margin-left:9px;
+    margin-left:0px;
     width:30px;
   }
   aside ul li a span {
     display: none;
+  }
+  .show-phone {
+    display:flex;
   }
 }
 /* 1 sidebar */
