@@ -47,7 +47,7 @@
 }
 @media (max-width: 767px) {
   .in h2 {
-  	font-size:15px;
+  	font-size:10px;
   	text-align:center;
   }
 }
@@ -86,6 +86,12 @@
 	background-color:#3661E3; 
 	width:fit-content;
 	color:white;
+}
+@media (max-width: 767px) {
+  .last-btn {
+  	font-size:12px;
+  	text-align:center;
+  }
 }
 
 
