@@ -4,10 +4,10 @@
 	<meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Home</title>
+	<title>profile</title>
 	<link rel="stylesheet" href="../css/normalize.css" />
 	<link rel="stylesheet" href="../css/main.css" />
-	<link rel="stylesheet" href="../css/Home.css" />
+	<link rel="stylesheet" href="../css/profile.css" />
 </head>
 <body>
 	<section  class="page" id="elzero-app">
@@ -23,13 +23,13 @@
 	    </h3>
         <ul>
           <li>
-            <a class="active" href="#.html">
+            <a class="" href="#.html">
               <img src="../imgs/home.png">
               <span>Home</span>
             </a>
           </li>       	
           <li>
-            <a class="" href="#.html">
+            <a class="active" href="#.html">
               <img src="../imgs/profile.png">
               <span>profile</span>
             </a>
@@ -61,25 +61,47 @@
 	  	  	<button><img src="../imgs/search.png"></button>
 	  	  	<input type="search" placeholder=" Search Author" />
           </form>	
-          <div class="icon-profile">
+          <div class="icon-profile">         
            <a href=""><img src="../imgs/profile.png" alt="" /></a> 
           </div>
 	  	</header>
-	  	<h1 class="big-title" >Home</h1>
-	  	<div class="upload">
-	  	  <form  >
-	  		<div  class="in">
-	  			<img src="../imgs/pdf.svg">
-	  			<h2>choose the file pdf only {{ name.length + " "+ name }}</h2> 
-	  			<button>select Documents</button>
-	  			<span>Or Drag & drop</span>
-	  		</div>
-	  		    <input type="file" id="uploads" name="uploads" accept=".pdf" multiple />
-			    <button type="submit" class="last-btn">Search for auther</button>
-	  	  </form>
-	  </div>
+	  	<h1 class="big-title">Profile</h1>
+      <div class="prof">
+        <div class="l-gird">
+         <img src="../imgs/profile.png">
+         <div class="date">
+           <div>my profile</div>
+           <div>
+             <span> 30 /5 /2022</span>
+             <span> 15/6/2023</span>
+           </div>
+           <div class="phone-num"> +01153161437</div>
+           <span class="e-mail">ahmedeweiso@gmail.com</span>
+           <div class="state">
+              <span>state ?</span>
+              <span>dot</span>
+           </div>
+         </div>
+         </div>
+        <div class="r-grid">       
+          <div class="t-grid">
+            <div class="xpay">
+              <h3>my xpay acouunt</h3>
+              <button>edite</button>
+            </div>
+          </div>
+          <div class="b-grid">
+            <div class="my-bill">
+              <h3>my bills</h3>
+              <button></button>
+            </div>
+            <div>prof info</div>
+          </div>
+      </div>
+     </div>
 	  </div>
 	</section>
+
 	<script src="../js/vue.js"></script>
     <script src="../js/main.js"></script>
 </body>

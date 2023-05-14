@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body class="sign-up-body">
-  	<section class="box">
+
+  	<section  id="elzero-app" class="box">
   		<form>
   		  <div class="icon">
   			<img src="imgs/web.png">
   		  </div>
-  		  <h2>Get Started today</h2>
+  		  <h2>Get Started today  {{ name }}</h2>
   	  	  <p>Every novel has a writer .. There is no cheating in novels anymore
   		  </p>
   		  <div class="input-box">
-  		  	<input type="text" name="" required>
-  		  	<span>Name</span>
+  		  	<input type="text" name="" value="" required>
+  		  	<span >Name </span>
   		  	<i></i>
   		  </div>
   		  <div class="input-box">
@@ -40,5 +41,16 @@
   		  <div class="transfare"><a href="html/log-in.html">log-in</div>
   		</form>
   	</section>
+	<!--
+	  <div id="elzero-app">
+		<p > hello {{ name }}</p>
+		<div > 
+			<h1>welcome {{ name }} </h1>
+			<p> hello {{ name }}</p>
+		</div>
+	  </div>
+	-->
+	<script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

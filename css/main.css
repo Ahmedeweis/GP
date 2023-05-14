@@ -159,7 +159,7 @@ aside ul li a {
 }
 aside ul li a:hover,
 aside ul li a.active {
-  background-color: #f6f6f6;
+  background-color: #ccc;
 }
 
 aside ul li a img {
