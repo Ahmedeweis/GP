@@ -5,21 +5,30 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-  text-transform:capitalize;
+}
+.help {
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items: center;
+  font-size:var(--main-font);
+  font-weight:bold;
 }
 :root {
+  --main-font:20px;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family:'Poppins', sans-serif;
+
 }
+
 .sign-up-body {
   display:flex;
   justify-content:center;
   align-items:center;
-  min-height:100vh;
   background-image:url(../imgs/backII.jpg);
   background-position:center;
   background-repeat:no-repeat; 
@@ -29,7 +38,6 @@ a {
   text-decoration: none;
   color:black;
   font-weight:bold;
-  text-transform:capitalize;
 }
 button {
   text-transform:capitalize;
@@ -270,6 +278,11 @@ header .icon-profile img {
 /* 1 h1 */
 /* 1 Global Rules */
 /* 0 sign-up page */
+
+.sign-up-body {
+  height: 100vh !important;
+}
+
 .sign-up-body .box {
   position:relative;
   width:380px;
@@ -346,12 +359,12 @@ header .icon-profile img {
 }
 .sign-up-body .box form p {
   text-align:center;
+  font-weight: bold;
 }
 .sign-up-body .box form .input-box{
   position:relative;
   width:300px;
   margin-top:35px;
-
 }
 .sign-up-body .box form .input-box input{
   position:relative;
@@ -380,6 +393,7 @@ header .icon-profile img {
   font-size:1em;
   letter-spacing:0.05em;
   transition:0.5s;
+  text-transform: capitalize;
 }
 .sign-up-body .box form .input-box input:valid ~ span,
 .sign-up-body .box form .input-box input:focus ~ span{

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>profile</title>
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/profile.css" />
+</head>
+<body class="prof-body">
+      <div class="prof">
+        <!-- -->
+        <div class="l-gird">
+          <img class="pers-photo" src="../assets/profile.png" />
+          <div class="date">
+            <div class="">my profile</div>
+            <div class="num-date">
+              <span>First Login 30 / 5 / 2022</span>
+              <span>Last Login 15/6/2023</span>
+            </div>
+          </div>
+          <span class="e-mail">
+            <input type="email"  disabled placeholder="Enter your Email" v-model="email"/>
+          </span>
+          <div class="state">
+            <span>state </span>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <!-- -->
+        <div class="r-grid ">
+          <div class="t-grid">
+            <div class="personal-info">
+              <h3>personal-info</h3>
+              <button @click.prevent="Update">Edit</button>
+            </div>
+            <div class="name">
+              <h2>Name : <input disabled  type="text" placeholder="Enter your Name" v-model="name"  /></h2>
+            </div>
+            <div class="age">
+              <h2>Age : &nbsp;&nbsp;&nbsp;<input disabled  type="text" placeholder="Enter your age" v-model="age" /></h2>
+            </div>
+          </div>
+          <!-- -->
+          <div  class="r-grid down-r-grid">
+            <div class="t-grid down-t-grid">
+              <div class="personal-info">
+                <h3>personal-info</h3>
+              </div>
+              <div class="name">
+                <h2>E-mail :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input disabled  type="email"  v-model="email"/></h2>
+              </div>
+              <div class="age">
+                <h2>password : <input disabled  type="password" placeholder="Enter your password" v-model="password"/></h2>
+              </div>
+            </div>
+          </div>
+          <!-- -->
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
