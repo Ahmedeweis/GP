@@ -218,7 +218,12 @@ ul {
   z-index: 1;
   flex-direction: row;
 }
- 
+@media (max-width: 768px) {
+    .post  {
+    flex-direction: column;
+    }
+  }
+  
 .post::before {
     content: "";
     left: 50%;

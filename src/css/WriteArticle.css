@@ -273,10 +273,16 @@ ul {
 }
 .auto-expand-textarea {
   width: 100%;
-  min-height: 50px;
+  min-height: 50px;padding: 15px 10px 0px 5px;
   resize: none;
-  padding: 15px 10px 16px 5px;
+  padding: 15px 10px 0px 5px;
 }
+@media (max-width: 768px) {
+  .auto-expand-textarea {
+    padding: 15px 10px 15px 5px;
+  }
+}
+
 .cell {
   display: flex;
   flex-direction: column;
